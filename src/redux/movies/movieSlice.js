@@ -9,6 +9,7 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     addMovies: (state, { payload }) => {
+      // eslint-disable-next-line no-param-reassign
       state.movies = payload;
     },
   },
