@@ -1,51 +1,48 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
-import user from '../../assets/images/user.png';
-import './Header.scss';
-import { fetchAsyncMovies, fetchAsyncShows } from '../../redux/movies/movieSlice';
+import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
+import { useEffect, useState } from 'react';
+import _ from 'lodash';
+import './Header.css';
 
-const Header = () => {
-  const [term, setTerm] = useState('');
-  const dispatch = useDispatch();
+const Header = ({ onSearchCountry }) => {
+  const [search, setSearch] = useState('');
 
-  const submitHandler = (e) => {
-    e.preventDefault();
+  const continents = useSelector((state) => state);
 
-    if (term === '') return alert('Please enter search item');
+  const countries = Object.values(continents);
+  const finalC = [];
+  countries.map((continent) => finalC.push(...continent));
 
-    dispatch(fetchAsyncMovies(term));
-    dispatch(fetchAsyncShows(term));
-    setTerm('');
+  useEffect(() => {
+    const s = search.toLowerCase();
+    const searchCountry = finalC.filter((country) => country.name.common.toLowerCase().includes(s));
+    const sortedFiteredCountries = _.sortBy(searchCountry, ['name.common'], ['asc']);
+    onSearchCountry(sortedFiteredCountries);
+  }, [search]);
+
+  const countrySearchHandler = (e) => {
+    setSearch(e.target.value);
   };
 
   return (
-
-    <div className="header">
-
-      <div className="logo">
-        <Link to="/">Online Stream</Link>
-      </div>
-      <div className="search-bar">
-        <form onSubmit={submitHandler}>
-
-          <input type="text" value={term} placeholder="Search..." onChange={(e) => setTerm(e.target.value)} />
-          <button type="submit">
-            <i
-              role="button"
-              aria-label="Mute volume"
-              className="fa fa-search"
-            />
-          </button>
-        </form>
-      </div>
-
-      <div className="user-image">
-        <img src={user} alt="user" />
-      </div>
-
-    </div>
+    <header className="Header">
+      <h1 className="Header__title">World Countries</h1>
+      <form>
+        <input
+          id="search-bar"
+          type="text"
+          placeholder="Search country"
+          onChange={countrySearchHandler}
+          value={search}
+          className="input-searh"
+        />
+      </form>
+    </header>
   );
+};
+
+Header.propTypes = {
+  onSearchCountry: PropTypes.func.isRequired,
 };
 
 export default Header;
