@@ -5,10 +5,12 @@ import MovieList from '../MovieList.js/MovieList';
 
 const Home = () => {
   const dispatch = useDispatch();
+  const movieText = 'Tech';
+  const showText = 'Friends';
 
   useEffect(() => {
-    dispatch(fetchAsyncMovies());
-    dispatch(fetchAsyncShows());
+    dispatch(fetchAsyncMovies(movieText));
+    dispatch(fetchAsyncShows(showText));
   }, [dispatch]);
 
   return (
