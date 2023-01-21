@@ -8,10 +8,11 @@ import { fetchAsyncMovies, fetchAsyncShows } from '../../redux/movies/movieSlice
 const Header = () => {
   const [term, setTerm] = useState('');
   const dispatch = useDispatch();
+
   const submitHandler = (e) => {
     e.preventDefault();
+
     if (term === '') return alert('Please enter search item');
-    
 
     dispatch(fetchAsyncMovies(term));
     dispatch(fetchAsyncShows(term));

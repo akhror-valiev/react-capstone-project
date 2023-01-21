@@ -3,7 +3,7 @@
 .header {
   background-color: $secondary-color;
   height: 72px;
-  padding: 0px 40px;
+  padding: 0 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +30,9 @@
     display: flex;
     justify-content: center;
     width: 70%;
+
     button {
-      padding: 0px 8px;
+      padding: 0 8px;
       font-size: 20px;
       cursor: pointer;
       height: 38px;
