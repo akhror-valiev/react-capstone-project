@@ -106,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo" />
 
-- [Live Demo Link](https://vocal-hotteok-4641dc.netlify.app/)
+- [Live Demo Link](https://merry-sopapillas-1c5ebb.netlify.app/)
 
 ## 💻 Getting Started <a name="getting-started" />
 
