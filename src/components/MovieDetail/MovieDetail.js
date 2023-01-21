@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAsyncDetailPage, getDetailPage, removeSelectedDetailPage } from '../../redux/movies/movieSlice';
 import './MovieDetail.scss';
 
 const MovieDetail = () => {
   const { imdbID } = useParams();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const data = useSelector(getDetailPage);
 
@@ -23,8 +24,20 @@ const MovieDetail = () => {
       ) : (
         <>
           <div className="section-left">
-            <div className="movie-title">{data.Title}</div>
+            <div className="back-arrow">
+
+              <button type="button" onClick={() => navigate('/')}>
+                <i className="fa fa-arrow-left" />
+              </button>
+            </div>
+
+            <div className="movie-title">
+
+              {data.Title}
+
+            </div>
             <div className="movie-rating">
+
               <span>
                 IMDB Rating
                 {' '}

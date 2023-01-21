@@ -8,6 +8,25 @@
   font-weight: 400;
 }
 
+.fa-arrow-left {
+  font-size: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow {
+  display: flex;
+  align-items: center;
+}
+
+.back-arrow button {
+  display: flex;
+  color: #fafafa;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .movie-rating {
   padding-left: 3px;
   margin-top: 20px;
