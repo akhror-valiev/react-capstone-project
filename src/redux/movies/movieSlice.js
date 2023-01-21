@@ -33,7 +33,6 @@ const movieSlice = createSlice({
   initialState,
   reducers: {
     removeSelectedDetailPage: (state) => {
-      // eslint-disable-next-line no-param-reassign
       state.selectedDetailPage = {};
     },
   },

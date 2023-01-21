@@ -19,6 +19,7 @@
 	],
 	"plugins": ["react"],
 	"rules": {
+		"no-param-reassign":"off",
 		"no-alert": "off",
 		"consistent-return": "off",
 		"react/jsx-props-no-spreading": "off",
