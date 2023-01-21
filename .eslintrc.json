@@ -19,6 +19,7 @@
 	],
 	"plugins": ["react"],
 	"rules": {
+		"func-names":"off",
 		"no-param-reassign":"off",
 		"no-alert": "off",
 		"consistent-return": "off",
