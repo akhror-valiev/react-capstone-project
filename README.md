@@ -42,7 +42,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
+  - [🚀 Live Demo](https://vocal-hotteok-4641dc.netlify.app/)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -106,7 +106,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo" />
 
-- [Live Demo Link](https://chic-crepe-c605d4.netlify.app/)
+- [Live Demo Link](https://vocal-hotteok-4641dc.netlify.app/)
 
 ## 💻 Getting Started <a name="getting-started" />
 
@@ -184,7 +184,7 @@ If you like this project support it through staring the project.
 
 ## 🙏 Acknowledgments <a name="acknowledgements" />
 
-I would like to thank Microverse for idea of the project
+For the design, and inpiration from [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio) using these [design guidelines](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,7 +192,7 @@ I would like to thank Microverse for idea of the project
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
