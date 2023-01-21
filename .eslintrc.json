@@ -19,8 +19,9 @@
 	],
 	"plugins": ["react"],
 	"rules": {
-		"func-names":"off",
-		"no-param-reassign":"off",
+		"react-hooks/exhaustive-deps": "off",
+		"func-names": "off",
+		"no-param-reassign": "off",
 		"no-alert": "off",
 		"consistent-return": "off",
 		"react/jsx-props-no-spreading": "off",
