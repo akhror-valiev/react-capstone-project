@@ -128,7 +128,7 @@ Clone this repository to your desired folder:
 ```
   cd "to where you want to install your project"
 
- https://github.com/akhror-valiev/spaceX-group-project
+ https://github.com/akhror-valiev/react-capstone-project
 ```
 
 ### Install
